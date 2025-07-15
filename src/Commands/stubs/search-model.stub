@@ -1,0 +1,29 @@
+```
+<?php
+
+namespace {{ namespace }};
+
+use {{ modelClass }};
+use Picobaz\GridView\Contracts\SearchContract;
+use Picobaz\GridView\Traits\BaseSearch;
+
+class {{ class }} extends {{ modelClass }} implements SearchContract
+{
+    use BaseSearch;
+
+    public function fields(): array
+    {
+        return [];
+    }
+
+    public function searchRules(): array
+    {
+        return [];
+    }
+
+    public function exportModel($query)
+    {
+        return new \App\Exports\{{ class }}Export($query->get());
+    }
+}
+```

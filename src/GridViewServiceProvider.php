@@ -4,6 +4,7 @@ namespace Picobaz\GridView;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
+use Picobaz\GridView\Commands\MakeGridViewSearchCommand;
 
 class GridViewServiceProvider extends ServiceProvider
 {
@@ -13,6 +14,12 @@ class GridViewServiceProvider extends ServiceProvider
         $this->app->singleton('gridview', function () {
             return new GridView([]);
         });
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                MakeGridViewSearchCommand::class,
+            ]);
+        }
     }
 
     public function boot()

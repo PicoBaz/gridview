@@ -16,7 +16,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Picobaz\\GridView\\": "src/"
+      "Picobaz\\GridView\\": "src/",
+      "Picobaz\\GridView\\Commands\\": "src/Commands/"
     },
     "files": [
       "src/gridview_helper.php"
