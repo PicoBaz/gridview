@@ -1,0 +1,34 @@
+{
+  "name": "picobaz/gridview",
+  "description": "A flexible and customizable data grid component for Laravel with support for pagination, filtering, sorting, and exporting.",
+  "type": "laravel-package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Picobaz",
+      "email": "picobaz3@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "illuminate/support": "^8.0|^9.0|^10.0",
+    "maatwebsite/excel": "^3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Picobaz\\GridView\\": "src/"
+    },
+    "files": [
+      "src/gridview_helper.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Picobaz\\GridView\\GridViewServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
