@@ -3,7 +3,7 @@
 
 namespace {{ namespace }};
 
-use {{ modelClass }};
+use {{ modelClassUse }};
 use Picobaz\GridView\Contracts\SearchContract;
 use Picobaz\GridView\Traits\BaseSearch;
 

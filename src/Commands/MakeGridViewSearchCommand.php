@@ -24,15 +24,15 @@ class MakeGridViewSearchCommand extends GeneratorCommand
     protected function replaceClass($stub, $name)
     {
         $class = str_replace($this->getNamespace($name) . '\\', '', $name);
-        $modelClass = $this->guessModelClass($class);
-        $stub = str_replace(['{{ class }}', '{{ modelClass }}'], [$class, $modelClass], $stub);
+        [$modelClassUse,$modelClass] = $this->guessModelClass($class);
+        $stub = str_replace(['{{ class }}', '{{ modelClassUse }}', '{{ modelClass }}'], [$class, $modelClassUse,$modelClass], $stub);
         return $stub;
     }
 
     protected function guessModelClass($searchClass)
     {
         $modelName = str_replace('Search', '', $searchClass);
-        return $this->rootNamespace() . 'Models\\' . $modelName;
+        return [$this->rootNamespace() . 'Models\\' . $modelName,$modelName];
     }
 
     protected function getPath($name)
