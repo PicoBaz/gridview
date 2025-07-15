@@ -6,7 +6,7 @@
     @endif
     class="{{$column['tdOption']['class'] ?? ''}}"
     style="{{ $tdOptionStyle ?? '' }}">
-    @if(isset($column['attribute']) && in_array($column['attribute'], ['a', 'selection', 'vehicleLicensePlateNr', 'Plaque', 'paymentStatus', 'driver', 'productOwnerContract_title', 'executor_name']))
+    @if(isset($column['attribute']))
         {!! $value !!}
     @else
         {{ $value }}
