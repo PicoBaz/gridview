@@ -1,4 +1,3 @@
-```
 <?php
 
 namespace {{ namespace }};
@@ -26,4 +25,3 @@ class {{ class }} extends {{ modelClass }} implements SearchContract
         return new \App\Exports\{{ class }}Export($query->get());
     }
 }
-```
