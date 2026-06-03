@@ -8,7 +8,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/picobaz/gridview.svg?style=for-the-badge&logo=packagist)](https://packagist.org/packages/picobaz/gridview)
 [![License](https://img.shields.io/packagist/l/picobaz/gridview.svg?style=for-the-badge)](https://packagist.org/packages/picobaz/gridview)
 [![PHP Version](https://img.shields.io/packagist/php-v/picobaz/gridview.svg?style=for-the-badge&logo=php)](https://packagist.org/packages/picobaz/gridview)
-[![Laravel Version](https://img.shields.io/badge/Laravel-8%2B%20%7C%209%20%7C%2010%20%7C%2011%20%7C%2012-FF2D20?style=for-the-badge&logo=laravel)](https://laravel.com)
+[![Laravel Version](https://img.shields.io/badge/Laravel-8%2B%20%7C%209%20%7C%2010%20%7C%2011%20%7C%2012%20%7C%2013-FF2D20?style=for-the-badge&logo=laravel)](https://laravel.com)
 
 **Build powerful, flexible, and beautiful data tables in Laravel with ease!**
 
